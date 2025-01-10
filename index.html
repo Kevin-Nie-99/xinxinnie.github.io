@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="个人学术主页 - Xinxin Nie - 研究生">
+    <title>Xinxin Nie - 个人主页</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">Xinxin Nie</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#research">科研成果</a></li>
+                <li><a href="#blog">博客</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 首页部分 -->
+        <section id="home" class="hero section">
+            <div class="container">
+                <div class="profile-info">
+                    <img src="images/profile.jpg" alt="Xinxin Nie" class="profile-image">
+                    <h1>Xinxin Nie</h1>
+                    <h2>研究生</h2>
+                    <p class="research-areas">计算机科学与技术</p>
+                    <p class="bio">我是一名专注于计算机科学研究的学生，主要研究方向包括人工智能、机器学习等。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于我部分 -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">关于我</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="year">2023</div>
+                        <div class="content">
+                            <h3>职位/学位</h3>
+                            <p>详细描述...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 科研成果部分 -->
+        <section id="research" class="section">
+            <div class="container">
+                <h2 class="section-title">科研成果</h2>
+                <div class="research-filters">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="paper">论文</button>
+                    <button class="filter-btn" data-filter="project">项目</button>
+                </div>
+                <div class="research-grid">
+                    <div class="research-item paper">
+                        <h3>论文标题</h3>
+                        <p>发表于 [期刊名称], 2023</p>
+                        <a href="#" class="btn-link">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 博客部分 -->
+        <section id="blog" class="section">
+            <div class="container">
+                <h2 class="section-title">博客文章</h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-content">
+                            <h3>文章标题</h3>
+                            <p class="date">2024-01-01</p>
+                            <p class="excerpt">文章摘要...</p>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式部分 -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">联系方式</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="icon-email"></i>
+                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">GitHub</a>
+                            <a href="#" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Xinxin Nie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
