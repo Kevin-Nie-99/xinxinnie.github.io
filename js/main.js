@@ -29,4 +29,30 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-});
+
+    // 添加滚动动画
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // 为时间线项目添加动画
+    document.querySelectorAll('.timeline-item').forEach((item, index) => {
+        item.style.setProperty('--item-index', index);
+        observer.observe(item);
+    });
+
+    // 为研究成果卡片添加动画
+    document.querySelectorAll('.research-item').forEach(item => {
+        observer.observe(item);
+    });
+}); 
