@@ -279,12 +279,26 @@ html {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     border: 1px solid transparent;
+    margin-bottom: 1rem;
 }
 
 .research-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     border-color: var(--secondary-color);
+}
+
+.research-item h3 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.journal-info, .patent-authors, .project-role {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
 }
 
 /* 博客卡片样式 */
