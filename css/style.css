@@ -470,3 +470,33 @@ html {
         font-size: 14px;
     }
 } 
+
+.highlighted-title {
+    color: #3498db; /* 明亮的蓝色 */
+    font-size: 1.8rem; /* 调整字体大小 */
+    font-weight: bold; /* 加粗字体 */
+    transition: color 0.3s ease; /* 添加过渡效果 */
+}
+
+.highlighted-title:hover {
+    color: #e67e22; /* 悬停时的颜色变化 */
+}
+
+.highlighted-area {
+    font-weight: bold; /* 加粗字体 */
+}
+
+.separator {
+    margin: 0 10px; /* 调整间距 */
+    color: var(--secondary-color); /* 可选：设置分隔符颜色 */
+}
+
+/* 链接样式 */
+a {
+    color: #333; /* 设置链接颜色为黑色 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+a:hover {
+    color: #3498db; /* 悬停时的颜色变化 */
+} 
